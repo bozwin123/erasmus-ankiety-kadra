@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPORT EWALUACYJNY - KADRA | Erasmus+ Dubienka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #003399;
+            --primary-dark: #002266;
+            --accent: #e53e3e;
+            --bg: #0f172a;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #ffffff;
+        }
+        .header-title h1 {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+        }
+        .header-title span {
+            background: rgba(0, 51, 153, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #93c5fd;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: #2563eb;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        main {
+            flex: 1;
+            max-width: 1000px;
+            margin: 28px auto;
+            padding: 0 16px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+        .page-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s ease;
+        }
+        .page-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .page-badge {
+            background: #f1f5f9;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+            padding: 6px;
+            border-top: 1px solid #e2e8f0;
+        }
+        footer {
+            background: rgba(15, 23, 42, 0.98);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 12px;
+        }
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: stretch;
+            }
+            .header-title h1 {
+                font-size: 13px;
+            }
+            .actions {
+                justify-content: stretch;
+            }
+            .btn {
+                flex: 1;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Raport Ewaluacyjny – Kadra</h1>
+            <span>Erasmus+ / FERS</span>
+        </div>
+        <div class="actions">
+            <a href="RAPORT_EWALUACYJNY_KADRA.pdf" class="btn btn-primary" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Pobierz PDF
+            </a>
+            <button onclick="window.print()" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                Drukuj
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-card">
+            <img src="page_1.png" alt="Strona 1 - Raport Ewaluacyjny Kadry" loading="lazy">
+            <div class="page-badge">Strona 1 z 3</div>
+        </div>
+        <div class="page-card">
+            <img src="page_2.png" alt="Strona 2 - Raport Ewaluacyjny Kadry" loading="lazy">
+            <div class="page-badge">Strona 2 z 3</div>
+        </div>
+        <div class="page-card">
+            <img src="page_3.png" alt="Strona 3 - Raport Ewaluacyjny Kadry" loading="lazy">
+            <div class="page-badge">Strona 3 z 3</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projekt: <strong>Erasmus+ w Liceum w Dubience: Nowe Możliwości dla Uczniów i Nauczycieli</strong></p>
+        <p>Nr projektu: 2025-1-PL01-KA122-SCH-000322073 | Beneficjent: Liceum Ogólnokształcące w Dubience</p>
+    </footer>
+</body>
+</html>
